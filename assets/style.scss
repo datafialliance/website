@@ -1,0 +1,128 @@
+/* Variables */
+@import "./styles/variables/variables";
+/* Global UI classes */
+@import "./styles/classes/spacing";
+@import "./styles/classes/typography";
+@import "./styles/classes/flexbox";
+
+:root {
+  //https://www.figma.com/file/JEWrFIOek9lZ4og3vTAFm3/DATAFi-Alliance?node-id=35%3A1012
+
+  /* Neutral */
+  --color-neutral-50: #f6f6f6;
+  --color-neutral-100: #ececec;
+  --color-neutral-200: #b7b7b7;
+  --color-neutral-300: #989898;
+  --color-neutral-400: #7f7f7f;
+  --color-neutral-500: #6a6a6a;
+  --color-neutral-600: #585858;
+  --color-neutral-700: #494949;
+  --color-neutral-800: #3d3d3d;
+  --color-neutral-900: #333;
+
+  /* Primary */
+  --color-primary-50: #0c9dcd;
+  --color-primary-100: #0080aa;
+  --color-primary-200: #006b8e;
+  --color-primary-300: #005976;
+  --color-primary-400: #004a62;
+  --color-primary-500: #003e52;
+  --color-primary-600: #003242;
+  --color-primary-700: #002834;
+  --color-primary-800: #00202a;
+  --color-primary-900: #001922;
+
+  --background: var(--color-primary-600);
+  --background-secondary: var(--color-primary-600);
+
+  /* Secondary */
+  --color-secondary-100: #ebffe9;
+  --color-secondary-200: #006b8e;
+  --color-secondary-300: #d5ffca;
+  --color-secondary-400: #b2ffa8;
+  --color-secondary-500: #94f28c;
+  --color-secondary-600: #76c170;
+  --color-secondary-700: #5f9b5a;
+  --color-secondary-800: #4c7c48;
+  --color-secondary-900: #3d6339;
+
+  --shadow-xs: 0 0 40px 4px rgba(146, 146, 146, 0.1);
+  --shadow-sm: 0 0 24px -10px rgba(0, 25, 34, 0.5);
+
+  //   --color-red: #fb3939;
+  //   --color-green: #32ab32;
+
+  --text-color: var(--color-neutral-50);
+
+  /* Fonts */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-family: "IBM Plex Sans Thai", sans-serif;
+  --font-family-2: "Inter", sans-serif;
+  --font-size-1: 42px;
+  --font-size-2: 32px;
+  --font-size-3: 24px;
+  --font-size-4: 20px;
+  --font-size-5: 16px;
+  --font-size-6: 14px;
+  --font-size-7: 12px;
+
+  /* Borders */
+  --border-radius: 8px;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  background-color: var(--background);
+}
+
+body {
+  background: var(--background);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-5);
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  --webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  max-width: 1440px;
+  padding: 0 $spacing-05;
+
+  // @media (min-width: #{$fullhd + 1}) {
+  //   max-width: $widescreen;
+  // }
+
+  // @media (max-width: #{$desktop + 1}) {
+  //   padding: 0 $spacing-07;
+  // }
+}
+
+button {
+  display: inline-block;
+  padding: $spacing-05 $spacing-07;
+  border: none;
+  background: var(--color-secondary-500);
+  line-height: 1;
+  border-radius: 8px;
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-semibold);
+}

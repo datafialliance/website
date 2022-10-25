@@ -1,0 +1,46 @@
+$rules: ('margin', 'padding');
+$rulesName: ('m', 'p');
+$elements-spaces: (0, $spacing-01, $spacing-02, $spacing-03, $spacing-04, $spacing-05, $spacing-06, $spacing-07, $spacing-08, $spacing-09, $spacing-10, $spacing-11);
+$elements-spaces-name: ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11');
+$positions: ('top', 'right', 'bottom', 'left');
+$positionsNames: ('t', 'r', 'b', 'l');
+
+@for $i from 0 to length($rules) {
+
+  $rule: unquote(nth($rules, $i+1));
+  $rName: unquote(nth($rulesName, $i+1));
+
+  .#{$rName}-none {
+    #{$rule}: 0;
+  }
+
+  @for $x from 0 to length($elements-spaces) {
+
+    $rSize: unquote(nth($elements-spaces-name, $x+1));
+    $eSpace: nth($elements-spaces, $x+1);
+
+    .#{$rName}-#{$rSize} {
+      #{$rule}: $eSpace;
+    }
+
+    .#{$rName}y-#{$rSize} {
+      #{$rule}-top: $eSpace;
+      #{$rule}-bottom: $eSpace;
+    }
+
+    .#{$rName}x-#{$rSize} {
+      #{$rule}-left: $eSpace;
+      #{$rule}-right: $eSpace;
+    }
+
+    @for $y from 0 to length($positions) {
+
+      $rPosition: unquote(nth($positions, $y+1));
+      $rPositionNames: unquote(nth($positionsNames, $y+1));
+
+      .#{$rName}#{$rPositionNames}-#{$rSize} {
+        #{$rule}-#{$rPosition}: $eSpace;
+      }
+    }
+  }
+}

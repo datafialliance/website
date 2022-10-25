@@ -11,11 +11,15 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
-    script: [],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/ef56a6304b.js', //https://fontawesome.com/icons/twitter?s=&f=brands
+      }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       { rel: 'preconnect', href: "https://fonts.gstatic.com" },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap' }
     ]
   },
   target: 'static',
@@ -24,6 +28,11 @@ export default {
   css: [
     '@/assets/style.scss',
   ],
+  styleResources: {
+    scss: [
+      '@/assets/styles/variables/variables.scss',
+    ]
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -34,6 +43,9 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://go.nuxtjs.dev/typescript
+    '@nuxt/typescript-build',
+    '@nuxtjs/style-resources',
   ],
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

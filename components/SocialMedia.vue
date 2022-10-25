@@ -1,0 +1,39 @@
+<template>
+  <ul>
+    <li
+      v-for="(link, index) of $t(`Header.socialMedia`)"
+      :key="`social-link-${index}`"
+    >
+      <a :href="link.href" target="_blank">
+        <i :class="'fa-brands fa-' + link.icon" :title="link.name"></i>
+      </a>
+    </li>
+  </ul>
+</template>
+
+
+<script lang="ts">
+import Vue from "vue";
+import { LinkType } from "../types/link-type";
+
+export default Vue.extend({
+  name: "SocialMedia",
+  data() {
+    return { linkType: LinkType };
+  },
+});
+</script>
+<style lang="scss" scoped>
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  li a {
+    text-decoration: none;
+    color: var(--color-secondary-500);
+    margin-left: $spacing-06;
+  }
+}
+</style>>

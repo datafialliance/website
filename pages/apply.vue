@@ -2,13 +2,8 @@
   <section class="page-content">
     <section class="container">
       <Header />
-      <Hero />
-    </section>
-    <HeroVector />
-    <Partners />
-    <HowItWorks />
-    <section class="container">
-      <Contact />
+      Apply
+
       <Footer />
     </section>
   </section>
@@ -18,7 +13,7 @@ import Vue from "vue";
 import Partners from "../components/Partners.vue";
 export default Vue.extend({
   components: { Partners },
-  name: "IndexPage",
+  name: "ApplyPage",
   mounted() {},
 });
 </script>

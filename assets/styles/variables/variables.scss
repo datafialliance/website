@@ -1,0 +1,15 @@
+@import './spacing';
+@import './typography';
+
+$standard-transition: 200ms ease-in-out;
+$border-radius: 8px;
+$border-radius-small: 4px;
+$border-radius-large: 16px;
+
+
+/* viewport */
+$fullhd: 1440px;
+$widescreen: 1152px;
+$desktop: 980px;
+$tablet: 720px;
+$mobile: 540px;

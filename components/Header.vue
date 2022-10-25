@@ -1,13 +1,26 @@
 <template>
-  <section>HEADER</section>
+  <header class="header">
+    <Logo></Logo>
+    <MenuLinks></MenuLinks>
+    <SocialMedia></SocialMedia>
+  </header>
 </template>
 
-<script>
-export default {
+
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
   name: "Header",
-};
+});
 </script>
-<style>
-@media (max-width: 991px) {
+<style lang="scss" scoped>
+.header {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-06 0;
 }
 </style>
