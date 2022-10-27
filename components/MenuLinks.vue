@@ -38,7 +38,9 @@ ul {
     color: var(--color-text);
     margin-left: $spacing-06;
     display: inline-block;
+    transition: all 0.2s ease-in-out;
     &:hover {
+      transition: all 0.2s ease-in-out;
       color: var(--color-secondary-500);
       border-bottom: 1px solid var(--color-secondary-500);
     }
@@ -47,7 +49,11 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    li {
+      margin-bottom: $spacing-03;
+    }
     a {
+      margin-left: 0;
       font-weight: 400;
     }
   }

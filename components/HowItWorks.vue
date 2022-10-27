@@ -58,8 +58,13 @@ export default Vue.extend({
   justify-content: center;
   padding: $spacing-10 0;
   position: relative;
+  @media (max-width: #{$desktop + 1}) {
+    padding: $spacing-10 0 0;
+  }
   .container {
     width: 100%;
+    z-index: 1;
+    position: relative;
   }
   &__content {
     display: grid;
@@ -76,6 +81,9 @@ export default Vue.extend({
         font-size: 25px;
         line-height: 1.2;
         color: var(--color-secondary-500);
+        @media (max-width: #{$desktop + 1}) {
+          font-size: var(--font-size-5);
+        }
       }
       > .header {
         font-weight: var(--font-weight-medium);
@@ -85,6 +93,9 @@ export default Vue.extend({
         align-items: center;
         letter-spacing: -0.01em;
         color: var(--color-neutral-50);
+        @media (max-width: #{$desktop + 1}) {
+          font-size: 25px;
+        }
       }
       > .description {
         font-family: var(--font-family-2);
@@ -96,6 +107,12 @@ export default Vue.extend({
         color: var(--color-neutral-100);
       }
     }
+
+    @media (max-width: #{$desktop + 1}) {
+      display: flex;
+      flex-direction: column;
+      gap: 96px;
+    }
   }
 }
 
@@ -104,6 +121,9 @@ export default Vue.extend({
   z-index: 0;
   bottom: -100px;
   left: 30%;
+  @media (max-width: #{$desktop + 1}) {
+    bottom: calc(50% + 100px);
+  }
 }
 ul {
   list-style: none;
@@ -151,6 +171,10 @@ ul {
       grid-row: 3 / 5;
       grid-column: 1 / 2;
     }
+  }
+  @media (max-width: #{$desktop + 1}) {
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>

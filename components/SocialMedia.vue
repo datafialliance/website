@@ -30,10 +30,22 @@ ul {
   align-items: center;
   padding: 0;
   margin: 0;
+  &.app-footer {
+    align-items: flex-start;
+    justify-content: flex-end;
+    li a {
+      color: var(--color-neutral-100);
+    }
+  }
   li a {
     text-decoration: none;
     color: var(--color-secondary-500);
     margin-left: $spacing-06;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      color: var(--color-secondary-600);
+    }
   }
 }
 </style>>

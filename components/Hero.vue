@@ -45,15 +45,32 @@ export default Vue.extend({
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-
   height: calc(100vh - 340px);
   min-height: 700px;
   justify-content: space-between;
   align-items: center;
-  // padding: $spacing-06 0;
   > section,
   > div {
     padding-top: 240px;
+  }
+  @media (max-width: #{$desktop + 1}) {
+    height: calc(100vh - 340px);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 580px;
+    padding-bottom: $spacing-07;
+    .svg {
+      width: 140px;
+      svg {
+        height: auto;
+      }
+    }
+    > section,
+    > div {
+      padding-top: $spacing-07;
+    }
   }
 }
 .svg {
@@ -63,13 +80,16 @@ export default Vue.extend({
 
 h1 {
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   font-size: 61px;
-  line-height: 110%;
+  line-height: 1.1;
   display: flex;
   align-items: center;
   margin: 0;
   letter-spacing: -0.01em;
+  @media (max-width: #{$desktop + 1}) {
+    font-size: 34px;
+  }
 }
 .description {
   max-width: 550px;
@@ -77,6 +97,9 @@ h1 {
   font-size: 25px;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  @media (max-width: #{$desktop + 1}) {
+    font-size: 16px;
+  }
 }
 .green {
   color: var(--color-secondary-500);

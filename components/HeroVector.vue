@@ -21,12 +21,17 @@ export default Vue.extend({
 div {
   background: var(--color-primary-500);
   z-index: 11;
-  //   position: absolute;
   width: 100%;
-  //   bottom: 0;
   overflow: hidden;
   height: 38vh;
   position: relative;
+
+  @media (max-width: #{$desktop + 1}) {
+    height: 180px;
+  }
+  @media (max-width: #{$tablet + 1}) {
+    height: 140px;
+  }
 }
 svg {
   display: flex;

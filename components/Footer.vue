@@ -1,8 +1,10 @@
 <template>
   <footer class="footer">
     <section class="footer__left">
-      <Logo />
-      {{ $t(`Footer.copyright`) }}
+      <Logo class="logo" />
+      <span class="copyright">
+        {{ $t(`Footer.copyright`) }}
+      </span>
     </section>
     <section class="footer__right">
       <MenuLinks class="app-footer" />
@@ -15,7 +17,7 @@
           {{ title.text }}
         </div>
       </section>
-      <SocialMedia />
+      <SocialMedia class="app-footer" />
     </section>
   </footer>
 </template>
@@ -31,10 +33,36 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $spacing-06 0;
+  padding: $spacing-08 0;
+  .logo {
+    margin-bottom: $spacing-06;
+  }
+  &__left {
+    font-weight: var(--font-weight-regular);
+    .copyright {
+      display: inline-block;
+      max-width: 325px;
+    }
+  }
   &__right {
     display: grid;
+    font-weight: var(--font-weight-regular);
     grid-template-columns: 1fr 1fr 100px;
+  }
+  @media (max-width: #{$desktop + 1}) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-07;
+    .logo {
+      justify-content: flex-start;
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-07;
+    }
   }
 }
 </style>

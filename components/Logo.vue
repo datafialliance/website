@@ -80,3 +80,9 @@ export default {
   name: "Logo",
 };
 </script>
+<style lang="scss" scoped>
+.logo {
+  display: flex;
+  align-items: center;
+}
+</style>

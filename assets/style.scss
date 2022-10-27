@@ -103,17 +103,17 @@ body * {
   flex-grow: 1;
   margin: 0 auto;
   position: relative;
-  width: auto;
-  max-width: 1440px;
+  width: 100%;
+  max-width: $fullhd;
   padding: 0 $spacing-05;
 
-  // @media (min-width: #{$fullhd + 1}) {
-  //   max-width: $widescreen;
-  // }
+  @media (max-width: #{$fullhd + 1}) {
+    max-width: $widescreen;
+  }
 
-  // @media (max-width: #{$desktop + 1}) {
-  //   padding: 0 $spacing-07;
-  // }
+  @media (max-width: #{$desktop + 1}) {
+    padding: 0 $spacing-06;
+  }
 }
 
 button {
@@ -125,4 +125,8 @@ button {
   border-radius: 8px;
   font-size: var(--font-size-5);
   font-weight: var(--font-weight-semibold);
+  &:hover {
+    transition: background 0.2s ease-in-out;
+    background: var(--color-secondary-700);
+  }
 }

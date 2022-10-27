@@ -1,12 +1,13 @@
 <template>
   <section class="page-content">
+    <Header />
     <section class="container">
-      <Header />
       <Hero />
     </section>
     <HeroVector />
     <Partners />
     <HowItWorks />
+    <ContactVector />
     <section class="container">
       <Contact />
       <Footer />
@@ -22,3 +23,13 @@ export default Vue.extend({
   mounted() {},
 });
 </script>
+<style lang="scss" scoped>
+.page-content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+</style>
