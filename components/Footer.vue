@@ -62,6 +62,7 @@ export default {
       display: flex;
       flex-direction: column;
       gap: $spacing-07;
+      width: 100%;
     }
   }
 }

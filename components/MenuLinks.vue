@@ -45,6 +45,9 @@ ul {
       border-bottom: 1px solid var(--color-secondary-500);
     }
   }
+  li:first-of-type a {
+    margin-left: 0;
+  }
   &.app-footer {
     display: flex;
     flex-direction: column;
