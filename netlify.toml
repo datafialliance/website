@@ -7,3 +7,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+[context.master.environment]
+  GOOGLE_ANALYTICS_ID = 'UA-XXX-X'
+[context.production.environment]
+  GOOGLE_ANALYTICS_ID = 'UA-XXX-X'
