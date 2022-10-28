@@ -4,7 +4,9 @@
     :class="innerWidth < 980 && mobileMenuOpen ? 'mobile-open' : ''"
   >
     <Logo></Logo>
-    <MenuLinks class="mobile-links"></MenuLinks>
+    <section @click="onMobileClick()">
+      <MenuLinks class="mobile-links"></MenuLinks>
+    </section>
     <SocialMedia class="social-media"></SocialMedia>
     <a class="mobile-icon" @click="mobileMenuOpen = !mobileMenuOpen">
       <i :class="!mobileMenuOpen ? 'fas fa-bars' : 'fas fa-close'"></i>
@@ -41,6 +43,11 @@ export default Vue.extend({
   },
 
   methods: {
+    onMobileClick() {
+      if (this.isMobile) {
+        this.mobileMenuOpen = false;
+      }
+    },
     onResize() {
       this.innerWidth = process.client ? window.innerWidth : 0;
     },
@@ -79,7 +86,7 @@ export default Vue.extend({
     }
     .mobile-icon {
       position: absolute;
-      right: 42px;
+      right: 20px;
       top: 40px;
     }
   }
@@ -98,6 +105,7 @@ export default Vue.extend({
     .mobile-icon {
       display: inline-block;
       margin-bottom: $spacing-03;
+      cursor: pointer;
       i {
         font-size: var(--font-size-2);
       }
