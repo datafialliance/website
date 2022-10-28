@@ -37,11 +37,7 @@
     <div>
       <div>
         <button class="btn-default mt-3" block="block" @click="submit($event)">
-          <img
-            class="btn-icon"
-            src="/img/icons/mail-icon.svg"
-            alt="mail icon"
-          /><span>{{ $t("Apply.form.submit") }}</span>
+          <span>{{ $t("Apply.form.submit") }}</span>
         </button>
       </div>
     </div>

@@ -24,10 +24,12 @@
       </header>
       <div class="description">{{ $t(`Contact.description`) }}</div>
       <div>
-        <button>
-          {{ $t(`Contact.button.text`) }}
-          <i class="ml-3 mt-1 fas fa-arrow-right"></i>
-        </button>
+        <NuxtLink to="/apply">
+          <button>
+            {{ $t(`Contact.button.text`) }}
+            <i class="ml-3 mt- fas fa-arrow-right"></i>
+          </button>
+        </NuxtLink>
       </div>
     </section>
   </section>
