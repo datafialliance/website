@@ -51,7 +51,7 @@ export default Vue.extend({
   align-items: center;
   > section,
   > div {
-    padding-top: 240px;
+    padding-top: 25vh;
   }
   @media (max-width: #{$desktop + 1}) {
     height: calc(100vh - 340px);

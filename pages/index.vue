@@ -1,5 +1,5 @@
 <template>
-  <section class="page-content">
+  <section class="index-page-content">
     <Header />
     <section class="container">
       <Hero />
@@ -23,8 +23,8 @@ export default Vue.extend({
   mounted() {},
 });
 </script>
-<style lang="scss" scoped>
-.page-content {
+<style lang="scss" >
+.index-page-content {
   overflow: hidden;
   display: flex;
   flex-direction: column;

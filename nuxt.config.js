@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'DataFi Alliance is a consortium of like minded projects and individuals with a mission to drive the growth of DataFi across various industries. Members of DataFi Alliance are building web3 tech to enable and empower individuals and businesses to benefit from financialization of their data without giving away ownership and control over their data.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     script: [

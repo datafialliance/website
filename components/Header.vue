@@ -27,6 +27,7 @@ export default Vue.extend({
   justify-content: space-between;
   align-items: center;
   padding: $spacing-06 $spacing-05;
+  top: 0;
   z-index: 1;
   .mobile-icon {
     display: none;

@@ -148,5 +148,19 @@ export default {
         text: '+47 8844 1563'
       }
     ]
+  },
+  Apply: {
+    header: {
+      title: 'Alliance Application Form',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae, odio molestie placerat ultricies dignissim. Et in dolor, euismod sit convallis in. Consectetur eu ',
+    },
+    form: {
+      name: 'Company Name',
+      email: 'E-mail',
+      websiteUrl: 'Website Url',
+      companyTwitter: 'Company Twitter',
+      description: 'Description',
+      submit: 'Send message',
+    }
   }
 }
