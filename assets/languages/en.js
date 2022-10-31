@@ -10,12 +10,12 @@ export default {
         href: '#partners',
       },
       {
-        name: 'How it works',
+        name: 'Core Values',
         type: 'anchor',
         href: '#how-it-works',
       },
       {
-        name: 'Apply',
+        name: 'Join Us',
         type: 'internal',
         href: '/apply',
       },
@@ -41,14 +41,15 @@ export default {
   Hero: {
     title: [
       {
-        text: 'Lorem ipsum dolor',
+        text: 'What is DataFi?',
       },
       {
-        text: 'sit amet, consectetur',
+        text: 'Data Finance is a branch of decentralized finance (DeFi) that caters to the financialization of Data and related services (e.g. AI or ML)',
         color: 'green'
       }
     ],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus',
+    description: 'Since Data is ubiquitous across various industries, DataFi can be seen as a new data economy that is decentralized and inclusive to all.
+',
     button: 'Lorem ipsum '
   },
   Partners: {
@@ -97,41 +98,41 @@ export default {
     ]
   },
   HowItWorks: {
-    title: 'How it works',
+    title: 'Our core values',
     header: 'Lorem ipsum dolor sit amet, consectetur',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra',
-    button: 'Lorem ipsum ',
+    button: 'Join The Movement',
     cards: [
       {
         icon: '/img/terra.svg',
-        title: 'Lorem ipsum dolor sit amet, consectetur',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus.',
+        title: 'Individual sovereignty over data:',
+        description: 'Users should have complete control over their data, and any data collected should only be used with explicit consent.',
       },
       {
         icon: '/img/terra.svg',
-        title: 'Lorem ipsum dolor sit amet, consectetur',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus.',
+        title: 'Fair and free exchange of data',
+        description: 'Tokenized data has intrinsic qualities, such as the value that will drive its exchange and use: Data should be seen as a valuable commodity, and tokenization is a way to ensure that data is exchanged fairly and transparently.',
       },
       {
         icon: '/img/terra.svg',
-        title: 'Lorem ipsum dolor sit amet, consectetur',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus.',
+        title: 'Decentralized data economy',
+        description: 'We are building towards a decentralized data economy to allow for distribution and control by many different parties rather than a few centralized institutions. We believe that data should be used for the benefit of all users, not just a select few.',
       }
     ]
   },
   Contact: {
     title: [
       {
-        text: 'Lorem ipsum dolor',
+        text: 'Providing a collaboration platform for data-focused Web3 initiatives.',
       },
       {
-        text: 'sit amet, consectetur',
+        text: 'We organize virtual and real-life events around data, share resources, and connect people working on similar projects.',
         color: 'green'
       }
     ],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna',
+    description: 'Our goal is to empower data-driven innovation in the Web3 space and build a stronger, more connected community.',
     button: {
-      text: 'Apply now',
+      text: 'Join now',
       icon: 'arrow-right',
     },
   },
@@ -152,7 +153,7 @@ export default {
   Apply: {
     header: {
       title: 'Alliance Application Form',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae, odio molestie placerat ultricies dignissim. Et in dolor, euismod sit convallis in. Consectetur eu ',
+      description: 'The data economy is booming and there is no better time to join than now! ',
     },
     form: {
       name: 'Company Name',
