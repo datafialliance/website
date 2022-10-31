@@ -48,8 +48,7 @@ export default {
         color: 'green'
       }
     ],
-    description: 'Since Data is ubiquitous across various industries, DataFi can be seen as a new data economy that is decentralized and inclusive to all.
-',
+    description: 'Since Data is ubiquitous across various industries, DataFi can be seen as a new data economy that is decentralized and inclusive to all.',
     button: 'Lorem ipsum '
   },
   Partners: {
