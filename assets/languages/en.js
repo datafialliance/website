@@ -5,7 +5,7 @@ export default {
   Header: {
     links: [
       {
-        name: 'Wallet types',
+        name: 'DataFi Alliance',
         type: 'anchor',
         href: '#partners',
       },
