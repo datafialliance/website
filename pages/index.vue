@@ -3,22 +3,25 @@
     <Header />
     <section class="container">
       <Hero />
+      <HeroText />
     </section>
     <HeroVector />
-    <Partners />
-    <HowItWorks />
+    <values />
+    <Members />
     <ContactVector />
     <section class="container">
-      <Contact />
+      <why-join-us />
       <Footer />
     </section>
   </section>
 </template>
 <script lang="ts">
 import Vue from "vue";
-import Partners from "../components/Partners.vue";
+import WhyJoinUs from "~/components/WhyJoinUs.vue";
+import Members from "../components/Members.vue";
+import Values from "../components/Values.vue";
 export default Vue.extend({
-  components: { Partners },
+  components: { Members, Values, WhyJoinUs },
   name: "IndexPage",
   mounted() {},
   head() {

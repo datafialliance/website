@@ -8,6 +8,16 @@
         <i :class="'fa-brands fa-' + link.icon" :title="link.name"></i>
       </a>
     </li>
+    <li>
+      <a
+        href="mailto:join@datafialliance.org?subject=Gm!! We would like to join the Alliance"
+      >
+        <button>
+          {{ $t(`WhyJoinUs.button.text`) }}
+          <i class="ml-3 mt- fas fa-arrow-right"></i>
+        </button>
+      </a>
+    </li>
   </ul>
 </template>
 

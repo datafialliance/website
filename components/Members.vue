@@ -1,9 +1,9 @@
 <template>
-  <section id="partners" class="main">
+  <section id="members" class="main">
     <section class="container">
-      <header class="title">{{ $t(`Partners.title`) }}</header>
+      <header class="title">{{ $t(`Members.title`) }}</header>
       <ul>
-        <li v-for="(item, index) of $t(`Partners.list`)" :key="`link-${index}`">
+        <li v-for="(item, index) of $t(`Members.list`)" :key="`link-${index}`">
           <a :href="item.href">
             <img :src="item.icon" />
           </a>
@@ -18,7 +18,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Partners",
+  name: "Members",
 });
 </script>
 <style lang="scss" scoped>

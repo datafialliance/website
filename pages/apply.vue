@@ -21,9 +21,9 @@
 <script lang="ts">
 import Vue from "vue";
 import Header from "~/components/Header.vue";
-import Partners from "../components/Partners.vue";
+import Members from "../components/Members.vue";
 export default Vue.extend({
-  components: { Partners, Header },
+  components: { Members, Header },
   name: "ApplyPage",
   mounted() {},
 });

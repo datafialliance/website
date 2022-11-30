@@ -1,20 +1,16 @@
 <template>
-  <section id="how-it-works" class="main">
+  <section id="values" class="main">
     <section class="container">
       <section class="main__content">
         <section class="main__content__text">
-          <div class="title">{{ $t(`HowItWorks.title`) }}</div>
-          <header class="header">{{ $t(`HowItWorks.header`) }}</header>
-          <div class="description">{{ $t(`HowItWorks.description`) }}</div>
-          <div>
-            <button>{{ $t(`HowItWorks.button`) }}</button>
-          </div>
+          <header class="header">{{ $t(`Values.header`) }}</header>
+          <div class="description">{{ $t(`Values.description`) }}</div>
         </section>
 
         <ul class="cards">
           <li
             class="card"
-            v-for="(card, index) of $t(`HowItWorks.cards`)"
+            v-for="(card, index) of $t(`Values.cards`)"
             :key="`card-${index}`"
           >
             <img :src="card.icon" />
@@ -46,7 +42,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "HowItWorks",
+  name: "Values",
 });
 </script>
 <style lang="scss" scoped>

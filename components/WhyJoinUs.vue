@@ -1,10 +1,11 @@
 <template>
-  <section id="contact" class="main">
+  <section id="why-join-us" class="main">
     <section class="main__content__text">
+      <h1 class="green">Why Join Us?</h1>
       <header class="header">
         <span
           :class="title.color"
-          v-for="(title, index) of $t(`Contact.title`)"
+          v-for="(title, index) of $t(`WhyJoinUs.title`)"
           :key="`contact-title-${index}`"
         >
           {{ title.text }}
@@ -22,14 +23,12 @@
           />
         </svg>
       </header>
-      <div class="description">{{ $t(`Contact.description`) }}</div>
       <div>
-        <NuxtLink to="/apply">
-          <button>
-            {{ $t(`Contact.button.text`) }}
-            <i class="ml-3 mt- fas fa-arrow-right"></i>
-          </button>
-        </NuxtLink>
+        <a
+          href="mailto:join@datafialliance.org?subject=Gm!! We would like to join the Alliance"
+        >
+          <button>Become A Member</button>
+        </a>
       </div>
     </section>
   </section>
@@ -44,17 +43,23 @@ export default Vue.extend({
 });
 </script>
 <style lang="scss" scoped>
-.main {
-  text-align: center;
-  max-width: 496px;
-  margin: 48px auto;
-}
-.header {
+h1 {
   font-weight: var(--font-weight-medium);
   font-size: 45px;
+}
+.main {
+  text-align: center;
+  width: 100%;
+  margin: 48px auto;
+  padding: 10% auto;
+}
+.header {
+  font-weight: var(--font-weight-regular);
+  font-size: 35px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.01em;
+  margin-top: 20px;
   margin-bottom: $spacing-05;
   position: relative;
   svg {

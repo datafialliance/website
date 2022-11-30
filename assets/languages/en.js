@@ -2,152 +2,124 @@
 // prettier-ignore
 // eslint-disable
 export default {
+  HeroText: {
+    title: [
+      {
+        text: 'What is DataFi?',
+        color: 'green'
+      }
+    ],
+    description: 'Data Finance (DataFi in short) is a branch of decentralized finance (DeFi) that caters to the financialization of Data and related services (e.g. AI or ML). Since Data is ubiquitous across various industries, DataFi can be seen as a new data economy that is decentralized and inclusive to all.',
+  },
   Header: {
     links: [
       {
-        name: 'DataFi Alliance',
+        name: 'What is DataFi?',
         type: 'anchor',
-        href: '#partners',
+        href: '#what-is-datafi',
       },
       {
         name: 'Core Values',
         type: 'anchor',
-        href: '#how-it-works',
+        href: '#values',
       },
       {
-        name: 'Join Us',
-        type: 'internal',
-        href: '/apply',
-      },
-      {
-        name: 'Contact',
+        name: 'Members',
         type: 'anchor',
-        href: '#contact',
+        href: '#members',
       },
+      {
+        name: 'Why Join Us?',
+        type: 'anchor',
+        href: '#why-join-us',
+      },
+      
     ],
     socialMedia: [
       {
         name: 'Twitter',
         icon: 'twitter',
-        href: 'https://www.facebook.com/DataFIAlliance',
+        href: 'https://twitter.com/datafialliance',
       },
       {
         name: 'Discord',
         icon: 'discord',
-        href: 'https://www.facebook.com/DataFIAlliance',
+        href: 'https://discord.gg/WBcm25T546',
       }
     ]
   },
   Hero: {
     title: [
       {
-        text: 'What is DataFi?',
-      },
-      {
-        text: 'Data Finance is a branch of decentralized finance (DeFi) that caters to the financialization of Data and related services (e.g. AI or ML)',
+        text: "Building a new Data Economy",
         color: 'green'
       }
     ],
-    description: 'Since Data is ubiquitous across various industries, DataFi can be seen as a new data economy that is decentralized and inclusive to all.',
-    button: 'Lorem ipsum '
+    description: 'DataFi Alliance is a consortium of web3 projects dedicated towards driving the growth of Data Finance. Our goal is to empower data-driven innovation in the Web3 space and build a stronger, more connected community.',
+    button: 'Explore More'
   },
-  Partners: {
-    title: 'Partners',
-    list: [
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-      {
-        icon: '/img/terra.svg',
-        href: '#partners',
-      },
-    ]
-  },
-  HowItWorks: {
-    title: 'Our core values',
-    header: 'Lorem ipsum dolor sit amet, consectetur',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra',
-    button: 'Join The Movement',
+  Values: {
+    header: 'Our Core Values',
+    description: 'In our mission to unlock new data economy, we are driven by these core values',
     cards: [
       {
-        icon: '/img/terra.svg',
-        title: 'Individual sovereignty over data:',
+        icon: '/img/sovreign.svg',
+        title: 'Self Sovereignty over Data',
         description: 'Users should have complete control over their data, and any data collected should only be used with explicit consent.',
       },
       {
-        icon: '/img/terra.svg',
-        title: 'Fair and free exchange of data',
+        icon: '/img/swap.svg',
+        title: 'Fair and Free Exchange of Data',
         description: 'Tokenized data has intrinsic qualities, such as the value that will drive its exchange and use: Data should be seen as a valuable commodity, and tokenization is a way to ensure that data is exchanged fairly and transparently.',
       },
       {
-        icon: '/img/terra.svg',
-        title: 'Decentralized data economy',
+        icon: '/img/globe.svg',
+        title: 'Decentralized Data Economy',
         description: 'We are building towards a decentralized data economy to allow for distribution and control by many different parties rather than a few centralized institutions. We believe that data should be used for the benefit of all users, not just a select few.',
       }
     ]
   },
-  Contact: {
+  WhyJoinUs: {
     title: [
       {
-        text: 'Providing a collaboration platform for data-focused Web3 initiatives.',
+        text: 'We provide a collaboration platform for data-focused Web3 initiatives.',
       },
       {
-        text: 'We organize virtual and real-life events around data, share resources, and connect people working on similar projects.',
-        color: 'green'
+        text: 'DataFi Alliance members gets benefit of all virtual and real-life events organised by us around data, share resources, and connect people working on similar projects.',
       }
     ],
-    description: 'Our goal is to empower data-driven innovation in the Web3 space and build a stronger, more connected community.',
     button: {
-      text: 'Join now',
-      icon: 'arrow-right',
+      text: 'Join now'
     },
   },
-  Footer: {
-    copyright: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus.',
-    address: [
+  Members: {
+    title: 'Current Members',
+    list: [
       {
-        text: '145 Richmond Street Charlottetown, PE C1A 1J1'
+        icon: '/img/terra.svg',
+        href: 'https://datax.fi',
       },
       {
-        text: 'grossman@gmail.com'
+        icon: '/img/terra.svg',
+        href: 'https://www.h2odata.xyz/',
       },
       {
-        text: '+47 8844 1563'
-      }
+        icon: '/img/terra.svg',
+        href: 'https://neworder.network/',
+      },
+      {
+        icon: '/img/terra.svg',
+        href: 'https://oceanprotocol.com/',
+      },
+      {
+        icon: '/img/terra.svg',
+        href: 'https://www.ruby.xyz/',
+      },
     ]
+  },
+  Footer: {
+    copyright: 'Copyright @ 2022 DataFiAlliance',
+    email: "join@datafialliance.org"
   },
   Apply: {
     header: {

@@ -5,18 +5,17 @@
       <span class="copyright">
         {{ $t(`Footer.copyright`) }}
       </span>
+      <span>
+        <a
+          class="green"
+          href="mailto:join@datafialliance.org?subject=Gm!! We would like to join the Alliance"
+        >
+          {{ $t(`Footer.email`) }}
+        </a>
+      </span>
     </section>
     <section class="footer__right">
       <MenuLinks class="app-footer" />
-      <section class="address">
-        <div
-          :class="title.color"
-          v-for="(title, index) of $t(`Footer.address`)"
-          :key="`address-${index}`"
-        >
-          {{ title.text }}
-        </div>
-      </section>
       <SocialMedia class="app-footer" />
     </section>
   </footer>
@@ -65,5 +64,9 @@ export default {
       width: 100%;
     }
   }
+}
+
+.green {
+  color: var(--color-secondary-500);
 }
 </style>
