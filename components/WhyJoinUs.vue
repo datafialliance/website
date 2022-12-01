@@ -46,6 +46,9 @@ export default Vue.extend({
 h1 {
   font-weight: var(--font-weight-medium);
   font-size: 45px;
+  @media (max-width: #{$desktop + 1}) {
+    font-size: 25px;
+  }
 }
 .main {
   text-align: center;
@@ -68,7 +71,7 @@ h1 {
     right: -24px;
   }
   @media (max-width: #{$desktop + 1}) {
-    font-size: 25px;
+    font-size: 16px;
   }
 }
 .description {
