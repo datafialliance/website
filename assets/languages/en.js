@@ -96,23 +96,23 @@ export default {
     title: 'Current Members',
     list: [
       {
-        icon: '/img/terra.svg',
+        icon: '/img/datax.svg',
         href: 'https://datax.fi',
       },
       {
-        icon: '/img/terra.svg',
+        icon: '/img/h2o.svg',
         href: 'https://www.h2odata.xyz/',
       },
       {
-        icon: '/img/terra.svg',
+        icon: '/img/neworder.svg',
         href: 'https://neworder.network/',
       },
       {
-        icon: '/img/terra.svg',
+        icon: '/img/ocean.svg',
         href: 'https://oceanprotocol.com/',
       },
       {
-        icon: '/img/terra.svg',
+        icon: '/img/ruby.svg',
         href: 'https://www.ruby.xyz/',
       },
     ]
