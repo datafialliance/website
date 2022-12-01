@@ -71,7 +71,7 @@ ul {
       padding: $spacing-03 $spacing-05;
     }
     img {
-      height: auto;
+      height: 72px !important;
       min-width: 72px !important;
       max-width: 72px;
       @media (max-width: #{$desktop + 1}) {
