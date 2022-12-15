@@ -110,11 +110,7 @@ export default {
       {
         icon: '/img/ocean.svg',
         href: 'https://oceanprotocol.com/',
-      },
-      {
-        icon: '/img/ruby.svg',
-        href: 'https://www.ruby.xyz/',
-      },
+      }
     ]
   },
   Footer: {
