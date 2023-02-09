@@ -110,6 +110,10 @@ export default {
       {
         icon: '/img/ocean.svg',
         href: 'https://oceanprotocol.com/',
+      },
+      {
+        icon: '/img/datalatte.svg',
+        href: 'https://www.datalatte.com/',
       }
     ]
   },
