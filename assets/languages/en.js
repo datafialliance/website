@@ -108,10 +108,6 @@ export default {
         href: 'https://neworder.network/',
       },
       {
-        icon: '/img/ocean.svg',
-        href: 'https://oceanprotocol.com/',
-      },
-      {
         icon: '/img/datalatte.svg',
         href: 'https://www.datalatte.com/',
       }
