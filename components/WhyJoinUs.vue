@@ -25,7 +25,7 @@
       </header>
       <div>
         <a
-          href="mailto:join@datafialliance.org?subject=Gm!! We would like to join the Alliance"
+          href="https://discord.com/invite/WBcm25T546"
         >
           <button>Become A Member</button>
         </a>

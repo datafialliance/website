@@ -5,14 +5,6 @@
       <span class="copyright">
         {{ $t(`Footer.copyright`) }}
       </span>
-      <span>
-        <a
-          class="green"
-          href="mailto:join@datafialliance.org?subject=Gm!! We would like to join the Alliance"
-        >
-          {{ $t(`Footer.email`) }}
-        </a>
-      </span>
     </section>
     <section class="footer__right">
       <MenuLinks class="app-footer" />
