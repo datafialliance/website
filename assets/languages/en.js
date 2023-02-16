@@ -110,12 +110,15 @@ export default {
       {
         icon: '/img/datalatte.svg',
         href: 'https://www.datalatte.com/',
+      },
+      {
+        icon: '/img/desights.svg',
+        href: 'https://desights.ai/',
       }
     ]
   },
   Footer: {
-    copyright: 'Copyright @ 2022 DataFiAlliance',
-    email: "join@datafialliance.org"
+    copyright: 'Copyright @ 2022 DataFiAlliance'
   },
   Apply: {
     header: {
