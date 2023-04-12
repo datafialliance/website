@@ -114,6 +114,10 @@ export default {
       {
         icon: '/img/desights.svg',
         href: 'https://desights.ai/',
+      },
+      {
+        icon: '/img/kenlabs.svg',
+        href: 'https://kenlabs.org/',
       }
     ]
   },
